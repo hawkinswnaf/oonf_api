@@ -131,7 +131,7 @@ cfg_append_printable_line(struct autobuf *autobuf, const char *fmt, ...) {
  */
 bool
 cfg_is_allowed_key(const char *key, bool section_name) {
-  static const char *valid = "_0123456789"
+  static const char *valid = "-_0123456789"
       "abcdefghijklmnopqrstuvwxyz"
       "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   /* test for [a-zA-Z_][a-zA-Z0-9_]* */
